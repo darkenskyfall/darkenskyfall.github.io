@@ -17,20 +17,38 @@
     body {
       background: #050505;
       color: #fff;
-      font-family: Arial;
+      font-family: Helvetica;
     }
 
     .navbar {
-      padding: 22px;
       background: #050505;
+      margin: 0;
+      padding:0;
+      padding: 22px;
     }
 
-    .navbar a {
+    .navbar .navbar-brand {
       color: #fff;
+      font-size: 25px;
+      padding: 8px;
+      background:#e74c3c;
+      margin: 0;
     }
 
     .btn{
       border-radius: 0px;
+    }
+
+    .socmed a{
+      text-decoration: none;
+      border-bottom: 5px solid #e74c3c;
+      /* text-decoration: underline;
+      text-decoration-color: #e74c3c; */
+    }
+
+    .sub-title{
+      text-decoration: none;
+      border-bottom: 8px solid #e74c3c;
     }
 
     .hero {
@@ -52,12 +70,64 @@
       font-size: 40pt;
     }
 
-    .hero-inner p {
+    .hero-inner span{
       font-size: 18pt;
+      color:black;
+      background: #fff;
+      font-weight: bold;
+      padding: 2px;
+      padding-left: 8px;
+      padding-right: 8px;
     }
 
-    .subtitle {
+    .sub-title {
       font-weight: bold;
+      font-size: 25pt;
+      margin-bottom: 12px;
+    }
+
+    .sub-content{
+      margin-top: 22px;
+    }
+
+    .inspiration{
+      color:#e74c3c;
+      background: #fff;
+      font-weight: bold;
+      padding: 2px;
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+
+    .thanks span{
+      color:#e74c3c;
+      background: #fff;
+      font-weight: bold;
+      padding: 2px;
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+
+    .link-red{
+      background:#e74c3c;
+      color: #fff;
+      padding:5px;
+      font-weight: bold;
+    }
+
+    .link-white{
+      background:#fff;
+      color: black;
+      padding:5px;
+      font-weight: bold;
+    }
+
+    .link-red:hover{
+      color: #eee;
+    }
+
+    .link-white:hover{
+      color:#333;
     }
 
     .card-columns {
@@ -83,16 +153,25 @@
       background: #050505;
     }
 
-    .lead a{
+    .socmed a{
       color:#fff;
     }
 
     .hr1{
-      height: 2px;
-      background: white;
+      height: 8px;
+      background: #e74c3c;
       width: 200px;
-      margin-top: 55px;
+      margin-top: 22px;
       margin-left:0px;
+    }
+
+    .img{
+      border-left: 2px solid #fff;
+    }
+
+    .btn{
+      border: 3px solid #fff;
+      font-weight: bold;
     }
   </style>
 </head>
@@ -100,34 +179,45 @@
 <body>
 
   <nav class="navbar navbar-expand-lg fixed-top">
-    <a class="navbar-brand" href="#"><b>PRAMUDYAXYZ</b></a>
+    <h1 class="navbar-brand" href="#"><b>PRAMUDYAXYZ</b></h1>
   </nav>
 
-  <div class="container main" style="margin-top:200px;">
+  <div class="container main" style="margin-top:250px;">
     <div class="row">
       <div class="col-md-8 mx-auto">
         <div class="hero-inner">
           <h1>Halo, Saya Dimas <br>Pramudya Sumarsis</h1>
-          <p class="lead">Seorang Pengembang Perangkat Lunak <br>Berbasis di Surabaya</p>
+          <span>Seorang Pengembang Perangkat Lunak</span><br>
+          <span>Berbasis di Surabaya .</span>
           <hr class="hr1 text-left">
         </div>
       </div>
     </div>
   </div>
 
-  <div class="container main" id="about" style="margin-top:150px;">
+  <div class="container main" id="about" style="margin-top:220px;">
     <div class="row">
       <div class="col-md-8 mx-auto">
-        <h1><b>Tentang Saya</b></h1>
-        <p class="lead">Salam Kenal! Saya Dimas Pramudya Sumarsis dari Surabaya, Mulai menjadi pengembang perangkat lunak 4 tahun terakhir sejak duduk di bangku sekolah menengah kejuruan hingga saat ini bekerja di salah satu perusahaan rintisan di kota pahlawan .</p>
-        <p class="lead">Di waktu senggang saya biasa untuk menulis dan mengutarakan sesuatu yang berhubungan dengan hidup, teknologi dan pengalaman saya<br>semoga kamu terinspirasi ;)</p>
-        <!-- <p class="lead">Pengembangan perangkat lunak meliputi membangun website dengan framework Laravel, membangun aplikasi berbasis iOS dengan Swift hingga uji coba . Untuk saat ini saya tertarik untuk mendalami bahasa pemrograman Python khususnya framework Django untuk membangun website .</p> -->
+        <span class="sub-title"><b>Tentang Saya</b></span>
+        <div class="sub-content">
+          <div class="row mt-5">
+            <div class="col-md-4 text-center mb-5">
+              <img src="https://pramudyaxyz.files.wordpress.com/2020/11/pp.jpeg" alt="..." class="rounded-circle mt-3">
+            </div>
+            <div class="col-md-8">
+              <p class="lead">Salam Kenal! Saya <a class="link-red" href="#">Dimas Pramudya Sumarsis</a> dari Surabaya, Mulai menjadi pengembang perangkat lunak sejak duduk di bangku sekolah menengah kejuruan hingga saat ini bekerja di salah satu perusahaan rintisan di kota pahlawan .</p>
+              <p class="lead">Di waktu senggang saya biasa untuk menulis dan mengutarakan sesuatu yang berhubungan dengan <a class="link-white" href="#">Hidup</a>, <a class="link-red" href="#">Teknologi</a>, <a class="link-white" href="#">Sejarah</a> dan <a class="link-red" href="#">Pengalaman</a> </p>
+              <span class="lead inspiration">Semoga kamu terinspirasi ;)</span>
+            </div>
+          </div>
+          
+        </div>
         <div class="mt-5">
-          <a href="#about" class="btn btn-outline-light mx-auto">Unduh Riwayat Hidup</a>
+          <a href="https://drive.google.com/uc?export=download&id=1t2Qis0w1GLt_lNZP0ahI7-EY9GEIzeGd" class="btn btn-outline-light mx-auto">Unduh Riwayat Hidup</a>
           <a href="https://pramudyaxyz.wordpress.com" target="_blank" class="btn btn-outline-light">Baca Jurnal</a>
         </div>
         <div class="text-center mt-5">
-          <img src="https://pramudyaxyz.files.wordpress.com/2020/09/img-20190818-wa0035-01-01.jpeg" alt="..." class="rounded-circle mt-3">
+          
         </div>
       </div>
     </div>
@@ -136,39 +226,37 @@
   <div class="container" style="margin-top:175px;">
     <div class="row">
       <div class="col-md-8 mx-auto">
-        <h1><b>Kesibukan</b></h1>
+        <span class="sub-title"><b>Kesibukan</b></span>
+        <div class="sub-content"></div>
+          <p class="lead">Saat ini saya bekerja di <a class="link-red" href="https://xenopati.id">xenopati.id</a>, salah perusahaan rintisan di kota pahlawan dengan posisi sebagai Pengembang Perangkat Lunak meliputi Pengembangan Aplikasi Seluler berbasis <a class="link-white" href="#">iOS</a> dengan <a class="link-red" href="#">Swift</a> sebagai bahasa pemrograman, lalu pengembangan situs web menggunakan teknologi <a class="link-white" href="#">Laravel</a>  dan <a class="link-red" href="#">MySql</a> dan juga kustomisasi situs dengan <a class="link-red" href="#">Wordpress</a> .</p>
 
-        <p class="lead">Saat ini saya bekerja di perusahaan rintisan di kota pahlawan dengan posisi sebagai Pengembang Software meliputi Pengembangan Aplikasi Seluler berbasis <i>iOS</i> dengan <i>Swift</i> sebagai bahasa pemrograman, lalu pengembangan situs web menggunakan teknologi <i>Laravel</i>  dan <i>MySql</i> dan juga mengerjakan kustomisasi website menggunakan <i>Wordpress</i> .</p>
+          <p class="lead">Namun beberapa bulan terakhir saya mempelajari bahasa pemrograman <a class="link-red" href="#">Python</a> dan membuat beberapa peralatan untuk menunjang pekerjaan saya dalam memasukkan data secara otomatis atau mengunduh banyak gambar dalam satu kali klik .</p>
 
-        <p class="lead">Namun beberapa bulan terakhir saya mempelajari bahasa pemrograman <i>Python</i> dan membuat beberapa peralatan untuk menunjang pekerjaan saya dalam memasukkan data secara otomatis atau mengunduh banyak gambar dalam satu kali klik .</p>
-
-        <p class="lead">Dan juga membuat mini project berbasis situs web menggunakan kerangka kerja <i>Django</i> sebagai media pembelajaran saya dan mungkin akan rilis secepatnya .</p>
+          <p class="lead">Dan juga membuat mini project berbasis situs web menggunakan kerangka kerja <a class="link-white" href="#">Django</a> sebagai media pembelajaran saya dan mungkin akan rilis secepatnya .</p>
+        </div>
       </div>
     </div>
   </div>
 
-  <div class="container" style="margin-top:175px;">
+  <div class="container" style="margin-top:245px;">
     <div class="row">
       <div class="col-md-8 mx-auto">
         <blockquote class="blockquote text-center">
-          <h1 class="mb-0">Tetaplah Hidup<br>Walau Untuk Hal Yang Kecil</h1>
-          <footer class="blockquote-footer text-white">Sumber <cite title="Source Title">Tidak Diketahui</cite></footer>
+          <h1 class="mb-0"><b>Tetaplah Hidup<br>Walau Untuk Hal Yang Kecil</b></h1>
+          <footer class="blockquote-footer text-white"><span>Sumber <cite title="Source Title">Tidak Diketahui</cite></span></footer>
         </blockquote>
       </div>
     </div>
   </div>
 
-  <footer class="footer" style="margin-top:175px;">
+  <footer class="footer" style="margin-top:245px;">
     <div class="container">
       <div class="row">
         <div class="col-md-8 mx-auto">
 
-          <h3>
-            <b>Terimakasih! <br>
-              Mari bekerja bersama<br>
-              Kontak saya di
-            </b>
-          </h3>
+          <h3 class="thanks"><span>Terimakasih!</span></h3>
+          <h3 class="thanks"><span>Mari Bekerja Sama</span></h3>
+          <h3 class="thanks"><span>Kontak Saya di .</span></h3>
 
           <h5 class="mt-5"><b>Dimas Pramudya Sumarsis</b></h5>
           <p class="lead">
@@ -179,7 +267,7 @@
           </p>
 
           <h5 class="mt-5"><b>Sosial Media</b></h5>
-          <p class="lead">
+          <p class="lead socmed">
             <a href="https://www.facebook.com/pramudyaxyz" target="_blank">Facebook</a>  
             <a href="https://www.twitter.com/pramudyaxyz" target="_blank">Twitter</a>  
             <a href="https://www.instagram.com/pramudyaxyz" target="_blank">Instagram</a>  
@@ -187,7 +275,7 @@
             <a href="https://www.github.com/pramudyaxyz" target="_blank">Github</a>
           </p>
 
-          <h5 class="mt-5"><b>&copy; PRAMUDYA SUMARSIS / 2020</b></h5>
+          <h5 class="mt-5"><b>&copy; PRAMUDYAXYZ / 2020</b></h5>
         </div>
       </div>
     </div>

@@ -24,15 +24,13 @@
       background: #050505;
       margin: 0;
       padding:0;
-      padding: 22px;
     }
 
     .navbar .navbar-brand {
       color: #fff;
       font-size: 25px;
-      padding: 8px;
-      background:#e74c3c;
-      margin: 0;
+      padding: 22px;
+      /* background:#e74c3c; */
     }
 
     .btn{
@@ -41,7 +39,7 @@
 
     .socmed a{
       text-decoration: none;
-      border-bottom: 5px solid #e74c3c;
+      border-bottom: 5px solid #fff;
       /* text-decoration: underline;
       text-decoration-color: #e74c3c; */
     }
@@ -70,20 +68,9 @@
       font-size: 40pt;
     }
 
-    .hero-inner span{
+    .hero-inner p{
       font-size: 18pt;
-      color:black;
-      background: #fff;
-      font-weight: bold;
-      padding: 2px;
-      padding-left: 8px;
-      padding-right: 8px;
-    }
-
-    .sub-title {
-      font-weight: bold;
-      font-size: 25pt;
-      margin-bottom: 12px;
+      color:#fff;
     }
 
     .sub-content{
@@ -108,26 +95,13 @@
       padding-right: 8px;
     }
 
-    .link-red{
-      background:#e74c3c;
+    .link{
       color: #fff;
-      padding:5px;
-      font-weight: bold;
+      text-decoration: underline;
     }
 
-    .link-white{
-      background:#fff;
-      color: black;
-      padding:5px;
-      font-weight: bold;
-    }
-
-    .link-red:hover{
-      color: #eee;
-    }
-
-    .link-white:hover{
-      color:#333;
+    .link:hover{
+      color: #fff;
     }
 
     .card-columns {
@@ -159,20 +133,12 @@
 
     .hr1{
       height: 8px;
-      background: #e74c3c;
+      background: #fff;
       width: 200px;
       margin-top: 22px;
       margin-left:0px;
     }
 
-    .img{
-      border-left: 2px solid #fff;
-    }
-
-    .btn{
-      border: 3px solid #fff;
-      font-weight: bold;
-    }
   </style>
 </head>
 
@@ -187,8 +153,7 @@
       <div class="col-md-8 mx-auto">
         <div class="hero-inner">
           <h1>Halo, Saya Dimas <br>Pramudya Sumarsis</h1>
-          <span>Seorang Pengembang Perangkat Lunak</span><br>
-          <span>Berbasis di Surabaya .</span>
+          <p class="lead">Seorang Pengembang Perangkat Lunak<br>Berbasis di Surabaya .</p><br>
           <hr class="hr1 text-left">
         </div>
       </div>
@@ -198,16 +163,16 @@
   <div class="container main" id="about" style="margin-top:220px;">
     <div class="row">
       <div class="col-md-8 mx-auto">
-        <span class="sub-title"><b>Tentang Saya</b></span>
+        <h2><b>Tentang Saya</b></h2>
         <div class="sub-content">
           <div class="row mt-5">
             <div class="col-md-4 text-center mb-5">
               <img src="https://pramudyaxyz.files.wordpress.com/2020/11/pp.jpeg" alt="..." class="rounded-circle mt-3">
             </div>
             <div class="col-md-8">
-              <p class="lead">Salam Kenal! Saya <a class="link-red" href="#">Dimas Pramudya Sumarsis</a> dari Surabaya, Mulai menjadi pengembang perangkat lunak sejak duduk di bangku sekolah menengah kejuruan hingga saat ini bekerja di salah satu perusahaan rintisan di kota pahlawan .</p>
-              <p class="lead">Di waktu senggang saya biasa untuk menulis dan mengutarakan sesuatu yang berhubungan dengan <a class="link-white" href="#">Hidup</a>, <a class="link-red" href="#">Teknologi</a>, <a class="link-white" href="#">Sejarah</a> dan <a class="link-red" href="#">Pengalaman</a> </p>
-              <span class="lead inspiration">Semoga kamu terinspirasi ;)</span>
+              <p class="lead">Salam Kenal! Saya <strong>Dimas Pramudya Sumarsis</strong> dari <strong>Surabaya</strong>, Mulai menjadi pengembang perangkat lunak sejak duduk di bangku sekolah menengah kejuruan hingga saat ini bekerja di salah satu perusahaan rintisan di kota pahlawan .</p>
+              <p class="lead">Di waktu senggang saya biasa untuk menulis dan mengutarakan sesuatu yang berhubungan dengan <strong>Hidup</strong>, <strong>Teknologi</strong>, <strong>Sejarah</strong> dan <strong>Pengalaman</strong></p>
+              <p class="lead">Semoga Kamu Terinspirasi!</p>
             </div>
           </div>
           
@@ -226,13 +191,13 @@
   <div class="container" style="margin-top:175px;">
     <div class="row">
       <div class="col-md-8 mx-auto">
-        <span class="sub-title"><b>Kesibukan</b></span>
+        <h2><b>Kesibukan</b></h2>
         <div class="sub-content"></div>
-          <p class="lead">Saat ini saya bekerja di <a class="link-red" href="https://xenopati.id">xenopati.id</a>, salah perusahaan rintisan di kota pahlawan dengan posisi sebagai Pengembang Perangkat Lunak meliputi Pengembangan Aplikasi Seluler berbasis <a class="link-white" href="#">iOS</a> dengan <a class="link-red" href="#">Swift</a> sebagai bahasa pemrograman, lalu pengembangan situs web menggunakan teknologi <a class="link-white" href="#">Laravel</a>  dan <a class="link-red" href="#">MySql</a> dan juga kustomisasi situs dengan <a class="link-red" href="#">Wordpress</a> .</p>
+          <p class="lead">Saat ini saya bekerja di <a class="link" href="https://xenopati.id">xenopati.id</a>, salah perusahaan rintisan di kota pahlawan dengan posisi sebagai Pengembang Perangkat Lunak meliputi Pengembangan Aplikasi Seluler berbasis <strong>iOS</strong> dengan <strong>Swift</strong> sebagai bahasa pemrograman, lalu pengembangan situs web menggunakan teknologi <strong>Laravel</strong>  dan <strong>MySql</strong> dan juga kustomisasi situs dengan <strong>Wordpress</strong> .</p>
 
-          <p class="lead">Namun beberapa bulan terakhir saya mempelajari bahasa pemrograman <a class="link-red" href="#">Python</a> dan membuat beberapa peralatan untuk menunjang pekerjaan saya dalam memasukkan data secara otomatis atau mengunduh banyak gambar dalam satu kali klik .</p>
+          <p class="lead">Namun beberapa bulan terakhir saya mempelajari bahasa pemrograman <strong>Python</strong> dan membuat beberapa peralatan untuk menunjang pekerjaan saya dalam memasukkan data secara otomatis atau mengunduh banyak gambar dalam satu kali klik .</p>
 
-          <p class="lead">Dan juga membuat mini project berbasis situs web menggunakan kerangka kerja <a class="link-white" href="#">Django</a> sebagai media pembelajaran saya dan mungkin akan rilis secepatnya .</p>
+          <p class="lead">Dan juga membuat mini project berbasis situs web menggunakan kerangka kerja <strong>Django</strong> sebagai media pembelajaran saya dan mungkin akan rilis secepatnya .</p>
         </div>
       </div>
     </div>
@@ -254,9 +219,9 @@
       <div class="row">
         <div class="col-md-8 mx-auto">
 
-          <h3 class="thanks"><span>Terimakasih!</span></h3>
-          <h3 class="thanks"><span>Mari Bekerja Sama</span></h3>
-          <h3 class="thanks"><span>Kontak Saya di .</span></h3>
+          <h3 class="thanks"><strong>Terimakasih!</strong></h3>
+          <h3 class="thanks"><strong>Mari Bekerja Sama</strong></h3>
+          <h3 class="thanks"><strong>Kontak Saya di .</strong></h3>
 
           <h5 class="mt-5"><b>Dimas Pramudya Sumarsis</b></h5>
           <p class="lead">

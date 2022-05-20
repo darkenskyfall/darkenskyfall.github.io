@@ -1,302 +1,332 @@
+
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.98.0">
+    <title>Dimas Sumarsis - Personal Page</title>
 
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/heroes/">
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-
-  <title>Dimas Pramudya Sumarsis | @darkenskyfall</title>
-  <style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     
-    @font-face {
-    font-family: 'Montserrat';
-    src: url('fonts/Montserrat-Black.ttf') format('truetype');
-    font-weight: 900;
-    font-style: normal;
-    font-display: swap;
-}
+    <style>
 
-    @font-face {
-        font-family: 'Montserrat';
-        src: url('fonts/Montserrat-Bold.ttf') format('truetype');
-        font-weight: bold;
-        font-style: normal;
-        font-display: swap;
-    }
+      @font-face {
+          font-family: 'Montserrat';
+          src: url('fonts/Montserrat-Black.ttf') format('truetype');
+          font-weight: 900;
+          font-style: normal;
+          font-display: swap;
+      }
 
-    @font-face {
-        font-family: 'Montserrat';
-        src: url('fonts/Montserrat-BlackItalic.ttf') format('truetype');
-        font-weight: 900;
-        font-style: italic;
-        font-display: swap;
-    }
+      @font-face {
+          font-family: 'Montserrat';
+          src: url('fonts/Montserrat-Bold.ttf') format('truetype');
+          font-weight: bold;
+          font-style: normal;
+          font-display: swap;
+      }
 
-    @font-face {
-        font-family: 'Montserrat';
-        src: url('fonts/Montserrat-BoldItalic.ttf') format('truetype');
-        font-weight: bold;
-        font-style: italic;
-        font-display: swap;
-    }
+      @font-face {
+          font-family: 'Montserrat';
+          src: url('fonts/Montserrat-BlackItalic.ttf') format('truetype');
+          font-weight: 900;
+          font-style: italic;
+          font-display: swap;
+      }
 
-    @font-face {
-        font-family: 'Montserrat';
-        src: url('fonts/Montserrat-ExtraBold.ttf') format('truetype');
-        font-weight: 800;
-        font-style: normal;
-        font-display: swap;
-    }
+      @font-face {
+          font-family: 'Montserrat';
+          src: url('fonts/Montserrat-BoldItalic.ttf') format('truetype');
+          font-weight: bold;
+          font-style: italic;
+          font-display: swap;
+      }
 
-    @font-face {
-        font-family: 'Montserrat';
-        src: url('fonts/Montserrat-ExtraBoldItalic.ttf') format('truetype');
-        font-weight: 800;
-        font-style: italic;
-        font-display: swap;
-    }
+      @font-face {
+          font-family: 'Montserrat';
+          src: url('fonts/Montserrat-ExtraBold.ttf') format('truetype');
+          font-weight: 800;
+          font-style: normal;
+          font-display: swap;
+      }
 
-    @font-face {
-        font-family: 'Montserrat';
-        src: url('fonts/Montserrat-ExtraLight.ttf') format('truetype');
-        font-weight: 200;
-        font-style: normal;
-        font-display: swap;
-    }
+      @font-face {
+          font-family: 'Montserrat';
+          src: url('fonts/Montserrat-ExtraBoldItalic.ttf') format('truetype');
+          font-weight: 800;
+          font-style: italic;
+          font-display: swap;
+      }
 
-    @font-face {
-        font-family: 'Montserrat';
-        src: url('fonts/Montserrat-ExtraLightItalic.ttf') format('truetype');
-        font-weight: 200;
-        font-style: italic;
-        font-display: swap;
-    }
+      @font-face {
+          font-family: 'Montserrat';
+          src: url('fonts/Montserrat-ExtraLight.ttf') format('truetype');
+          font-weight: 200;
+          font-style: normal;
+          font-display: swap;
+      }
 
-    @font-face {
-        font-family: 'Montserrat';
-        src: url('fonts/Montserrat-Italic.ttf') format('truetype');
-        font-weight: normal;
-        font-style: italic;
-        font-display: swap;
-    }
+      @font-face {
+          font-family: 'Montserrat';
+          src: url('fonts/Montserrat-ExtraLightItalic.ttf') format('truetype');
+          font-weight: 200;
+          font-style: italic;
+          font-display: swap;
+      }
 
-    @font-face {
-        font-family: 'Montserrat';
-        src: url('fonts/Montserrat-Light.ttf') format('truetype');
-        font-weight: 300;
-        font-style: normal;
-        font-display: swap;
-    }
+      @font-face {
+          font-family: 'Montserrat';
+          src: url('fonts/Montserrat-Italic.ttf') format('truetype');
+          font-weight: normal;
+          font-style: italic;
+          font-display: swap;
+      }
 
-    @font-face {
-        font-family: 'Montserrat';
-        src: url('fonts/Montserrat-LightItalic.ttf') format('truetype');
-        font-weight: 300;
-        font-style: italic;
-        font-display: swap;
-    }
+      @font-face {
+          font-family: 'Montserrat';
+          src: url('fonts/Montserrat-Light.ttf') format('truetype');
+          font-weight: 300;
+          font-style: normal;
+          font-display: swap;
+      }
 
-    @font-face {
-        font-family: 'Montserrat';
-        src: url('fonts/Montserrat-Medium.ttf') format('truetype');
-        font-weight: 500;
-        font-style: normal;
-        font-display: swap;
-    }
+      @font-face {
+          font-family: 'Montserrat';
+          src: url('fonts/Montserrat-LightItalic.ttf') format('truetype');
+          font-weight: 300;
+          font-style: italic;
+          font-display: swap;
+      }
 
-    @font-face {
-        font-family: 'Montserrat';
-        src: url('fonts/Montserrat-Regular.ttf') format('truetype');
-        font-weight: normal;
-        font-style: normal;
-        font-display: swap;
-    }
+      @font-face {
+          font-family: 'Montserrat';
+          src: url('fonts/Montserrat-Medium.ttf') format('truetype');
+          font-weight: 500;
+          font-style: normal;
+          font-display: swap;
+      }
 
-    @font-face {
-        font-family: 'Montserrat';
-        src: url('fonts/Montserrat-SemiBold.ttf') format('truetype');
-        font-weight: 600;
-        font-style: normal;
-        font-display: swap;
-    }
+      @font-face {
+          font-family: 'Montserrat';
+          src: url('fonts/Montserrat-Regular.ttf') format('truetype');
+          font-weight: normal;
+          font-style: normal;
+          font-display: swap;
+      }
 
-    @font-face {
-        font-family: 'Montserrat';
-        src: url('fonts/Montserrat-MediumItalic.ttf') format('truetype');
-        font-weight: 500;
-        font-style: italic;
-        font-display: swap;
-    }
+      @font-face {
+          font-family: 'Montserrat';
+          src: url('fonts/Montserrat-SemiBold.ttf') format('truetype');
+          font-weight: 600;
+          font-style: normal;
+          font-display: swap;
+      }
 
-    @font-face {
-        font-family: 'Montserrat';
-        src: url('fonts/Montserrat-SemiBoldItalic.ttf') format('truetype');
-        font-weight: 600;
-        font-style: italic;
-        font-display: swap;
-    }
+      @font-face {
+          font-family: 'Montserrat';
+          src: url('fonts/Montserrat-MediumItalic.ttf') format('truetype');
+          font-weight: 500;
+          font-style: italic;
+          font-display: swap;
+      }
 
-    @font-face {
-        font-family: 'Montserrat';
-        src: url('fonts/Montserrat-Thin.ttf') format('truetype');
-        font-weight: 100;
-        font-style: normal;
-        font-display: swap;
-    }
+      @font-face {
+          font-family: 'Montserrat';
+          src: url('fonts/Montserrat-SemiBoldItalic.ttf') format('truetype');
+          font-weight: 600;
+          font-style: italic;
+          font-display: swap;
+      }
 
-    @font-face {
-        font-family: 'Montserrat';
-        src: url('fonts/Montserrat-ThinItalic.ttf') format('truetype');
-        font-weight: 100;
-        font-style: italic;
-        font-display: swap;
-    }
+      @font-face {
+          font-family: 'Montserrat';
+          src: url('fonts/Montserrat-Thin.ttf') format('truetype');
+          font-weight: 100;
+          font-style: normal;
+          font-display: swap;
+      }
 
-    html {
-      scroll-behavior: smooth;
-    }
-    body {
-      background: #050505;
-      color: #fff;
-      font-family: Montserrat;
-    }
+      @font-face {
+          font-family: 'Montserrat';
+          src: url('fonts/Montserrat-ThinItalic.ttf') format('truetype');
+          font-weight: 100;
+          font-style: italic;
+          font-display: swap;
+      }
 
-    .navbar {
-      background: #050505;
-      margin: 0;
-      padding:0;
-    }
+      html {
+        scroll-behavior: smooth;
+      }
 
-    .navbar .navbar-brand {
-      color: #fff;
-      font-size: 25px;
-      padding: 22px;
-      /* background:#e74c3c; */
-    }
+      body {
+        background: #050505;
+        color: #fff;
+        font-family: Montserrat;
+      }
 
-    .sub-title{
-      text-decoration: none;
-      border-bottom: 8px solid #e74c3c;
-    } */
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
 
-    .hero {
-      /* Sizing */
-      width: 100%;
-      height: 100vh;
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
 
-      /* Flexbox stuff */
-      display: flex;
-      justify-content: left;
-      align-items: center;
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
 
-      /* Text styles */
-      text-align: left;
-    }
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
 
-    .hero-inner h1 {
-      font-weight: bold;
-      font-size: 25pt;
-      margin-bottom:22px;
-    }
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
 
-    .hero-inner p{
-      font-size: 13pt;
-      color:#fff;
-    }
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
 
-    a {
-      color:white;
-    }
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
 
-    a:hover{
-      color:#eee;
-    }
+      .sosmed-icons{
+        /* margin-top:22px;
+        margin-bottom:72px; */
+        font-size: 28pt;
+      }
 
-    .sosmed-icons{
-      margin-top:22px;
-      margin-bottom:72px;
-      font-size: 18pt;
-    }
+      .sosmed-icons a{
+        margin-right: 20px;
+        color: #fff;
+      }
+    </style>
 
-    .sosmed-icons a{
-      margin-right: 18px;
-    }
-
-  </style>
-</head>
-<body>
-
-  <div class="container main" style="margin-top:100px;">
-    <div class="row">
-      <div class="col-md-8 mx-auto">
-        <div class="hero-inner">
-          <div>
-            <h1>Halo, <br>Saya Dimas Pramudya Sumarsis</h1>
-            <h5 style="margin-top: -15px;margin-bottom: 25px;">( @darkenskyfall )</h5>
-
-            <p>Proletar yang merangkak naik ke borjuis, Tukang koding penuh waktu yang susah diam ketika sedang gabut, belum memiliki karya yang benar benar sempurna namun berusaha menjadi yang terbaik diantara yang terbaik.</p>
-
-            <p><b>Pekerjaan</b></p>
-            <p>Saat ini saya bekerja sebagai tukang koding di #xenopatidotid, salah satu startup di kota Surabaya, Awalnya iOS Dev penuh dan sekarang memperluas haluan menjadi mobile dev dengan bahasa pemrograman dart dan framework flutter sebagai kerangka kerja .</p>
-
-            <p><b>Kegiatan Lain</b></p>
-            <p>Dunia ternyata lebih luas dari layar monitor, ada beberapa kegiatan yang saya lakukan saat ini disamping pekerjaan utama yaitu</p>
-            <ul>
-              <li>
-                <p><b>Tukang Foto Hitam Putih</b></p>
-                <p>Menjadi tukang foto adalah hobi saya semenjak Sekolah Menengah Pertama namun sejak saya lulus ada ketertarikan dengan warna hitam putih, warna yang dianggap orang sebagai warna mistis dan monoton, namun di sisi lain bagi hitam putih memberi kesan nyawa pada foto tersebut . Untuk melihat publikasi bisa cek di Instagram @darkenskyfall, saya jepret kalau ada waktu senggang</p>
-              </li>
-              <li>
-                <p><b>Nulis Blog</b></p>
-                <p>Menulis adalah kegiatan yang terkadang saya lakukan, biasanya saya menulis di medium mengenai pengalaman dan kehidupan, namun tak jarang menulis dengan topik lain misal sejarah atau teknologi</p>
-              </li>
-            </ul>
-            <p><b>Tertarik dengan</b></p>
-            <ul>
-              <li>
-                Sejarah #MasaLalu
-              </li>
-              <li>
-                Teknologi #MasaDepan
-              </li>
-              <li>
-                Hitam Putih
-              </li>
-              <li>
-                Minimalisme
-              </li>
-              <li>
-                Stoikisme
-              </li>
-              <li>
-                Keseimbangan Kehidupan Bekerja
-              </li>
-            </ul>
-            <a class="btn btn-sm btn-light" href="https://drive.google.com/uc?export=download&id=1t2Qis0w1GLt_lNZP0ahI7-EY9GEIzeGd">Unduh Resume</a> <a class="btn btn-sm btn-light"href="https://darkenskyfall.medium.com/" target="blank">Baca Medium</a>
+    
+    <!-- Custom styles for this template -->
+    <link href="heroes.css" rel="stylesheet">
+  </head>
+  <body>
+    <main>
+      <div class="px-4 py-5 my-5 text-center">
+        <img class="d-block mx-auto mb-4 rounded-circle" src="https://media-exp1.licdn.com/dms/image/C5603AQGRDh2WSwLwVA/profile-displayphoto-shrink_800_800/0/1652607349619?e=1658361600&v=beta&t=IeokowKYh04ZWiAXoOYiW9BzLYIPfQMpZDhjmkzELio" alt="" width="150" height="150">
+        <h1 class="display-5 fw-bold">Halo, saya Dimas<br>Pramudya Sumarsis</h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="lead mb-4">Tukang koding penuh waktu yang susah diam ketika sedang gabut, belum memiliki karya yang benar benar sempurna namun berusaha menjadi yang terbaik diantara yang terbaik.</p>
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <a href="https://drive.google.com/uc?export=download&id=1t2Qis0w1GLt_lNZP0ahI7-EY9GEIzeGd" class="btn btn-light btn-lg px-4 gap-3"><b>Unduh Resume</b></a>
+            <a href="https://darkenskyfall.medium.com/" class="btn btn-outline-light btn-lg px-4"><b>Baca Medium</b></a>
           </div>
-          
-          <div class="sosmed-icons mt-5">
-            <a href="https://www.facebook.com/darkenskyfall"><i class="fa fa-facebook"></i></a>
-            <a href="https://www.twitter.com/darkenskyfall"><i class="fa fa-twitter"></i></a>
-            <a href="https://www.instagram.com/darkenskyfall"><i class="fa fa-instagram"></i></a>
-            <a href="https://www.linkedin.com/in/darkenskyfall"><i class="fa fa-linkedin"></i></a>
-            <a href="https://www.github.com/darkenskyfall"><i class="fa fa-github"></i></a>
-          </div>
-
         </div>
       </div>
-    </div>
-  </div>
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-</body>
-
+      <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-6">
+            <img src="https://media.istockphoto.com/photos/abstract-group-of-business-people-in-the-meeting-picture-id1089810082?k=20&m=1089810082&s=612x612&w=0&h=GXrPAl4EHWOArFjTH5rvyOfZn61XRUvfDXpcKWPiiCs=" class="d-block mx-lg-auto img-fluid rounded" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+          </div>
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold lh-1 mb-3">Sekilas Pekerjaan Sekarang</h1>
+            <p class="lead">Saat ini saya bekerja sebagai tukang koding di #xenopatidotid, salah satu startup di kota Surabaya, Awalnya iOS Dev penuh dan sekarang memperluas haluan menjadi mobile dev dengan bahasa pemrograman dart dan framework flutter sebagai kerangka kerja.</p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+              <a href="https://github.com/darkenskyfall" class="btn btn-light btn-lg px-4 me-md-2"><b><i class="fa fa-github"></i> Github</b></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container px-4 py-5" id="hanging-icons">
+        <h1 class="display-5 fw-bold lh-1 mb-3">Kegiatan Lain Lain</h1>
+        <p class="lead">Dunia ternyata lebih luas dari layar monitor, ada beberapa kegiatan yang saya lakukan saat ini disamping pekerjaan utama yaitu</p>
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+          <div class="col d-flex align-items-start">
+            <div>
+              <!-- <img src="https://media.istockphoto.com/photos/abstract-group-of-business-people-in-the-meeting-picture-id1089810082?k=20&m=1089810082&s=612x612&w=0&h=GXrPAl4EHWOArFjTH5rvyOfZn61XRUvfDXpcKWPiiCs=" class="d-block mx-lg-auto img-fluid rounded mb-5" alt="Bootstrap Themes" width="700" height="500" loading="lazy"> -->
+              <h2 class="fw-bold">Njepret</h2>
+              <p>Njepret foto adalah hobi saya semenjak Sekolah Menengah Pertama, namun sejak saya lulus ada ketertarikan dengan warna hitam putih. Warna yang dianggap orang sebagai warna mistis dan monoton, namun di sisi lain bagi saya hitam putih memberi kesan nyawa pada foto tersebut . Untuk melihat publikasi bisa cek di Instagram saya .</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <div>
+              <!-- <img src="https://media.istockphoto.com/photos/abstract-group-of-business-people-in-the-meeting-picture-id1089810082?k=20&m=1089810082&s=612x612&w=0&h=GXrPAl4EHWOArFjTH5rvyOfZn61XRUvfDXpcKWPiiCs=" class="d-block mx-lg-auto img-fluid rounded mb-5" alt="Bootstrap Themes" width="700" height="500" loading="lazy"> -->
+              <h2 class="fw-bold">Nulis</h2>
+              <p>Menulis adalah kegiatan yang terkadang saya lakukan, biasanya saya menulis di medium mengenai pengalaman dan kehidupan, namun tak jarang menulis dengan topik lain misal sejarah atau teknologi.</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <div>
+              <!-- <img src="https://media.istockphoto.com/photos/abstract-group-of-business-people-in-the-meeting-picture-id1089810082?k=20&m=1089810082&s=612x612&w=0&h=GXrPAl4EHWOArFjTH5rvyOfZn61XRUvfDXpcKWPiiCs=" class="d-block mx-lg-auto img-fluid rounded mb-5" alt="Bootstrap Themes" width="700" height="500" loading="lazy"> -->
+              <h2 class="fw-bold">Ngulik</h2>
+              <p>Mengulik hal baru seperti belajar metode baru tentang pemrograman, belajar memasak atau apa yang bisa diulik disekitar, kadang berhasil kadang juga gagal.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container px-4 py-5">
+        <h1 class="display-5 fw-bold lh-1 mb-3">Ketertarikan</h1>
+        <p class="lead">Saya Juga Memiliki Ketertarikan dengan hal hal berikut : </p>
+        <div class="list-group list-group-checkable d-grid gap-2 border-0 w-auto mt-5">
+          <label class="list-group-item rounded-3 py-3 bg-transparent text-white border" for="listGroupCheckableRadios1">
+            Sejarah #MasaLalu
+            <span class="d-block small opacity-50">Kita perlu menoleh kebelakang untuk menentukan arah masa depan</span>
+          </label>
+          <label class="list-group-item rounded-3 py-3 bg-transparent text-white border" for="listGroupCheckableRadios1">
+            Teknologi #MasaDepan
+            <span class="d-block small opacity-50">Teknologi kini semakin pesat dan mampu mengubah perilaku homo sapiens</span>
+          </label>
+          <label class="list-group-item rounded-3 py-3 bg-transparent text-white border" for="listGroupCheckableRadios1">
+            Minimalisme
+            <span class="d-block small opacity-50">Sebuah seni hidup untuk melawan perilaku konsumtif dengan asas <i>less is more</i></span>
+          </label>
+          <label class="list-group-item rounded-3 py-3 bg-transparent text-white border" for="listGroupCheckableRadios1">
+            Stoikisme
+            <span class="d-block small opacity-50">Filsafat kuno yang mengajarkan bagaimana cara mengendalikan diri dan apa yang kita tidak bisa kendalikan</span>
+          </label>
+          <label class="list-group-item rounded-3 py-3 bg-transparent text-white border" for="listGroupCheckableRadios1">
+            Hitam Putih
+            <span class="d-block small opacity-50">Warna pertama dalam fotografi, masih relevan digunakan hingga saat ini</span>
+          </label>
+        </div>
+      </div>
+      <div class="container px-4 py-5">
+        <div class="sosmed-icons mb-5 text-center">
+          <a href="https://www.facebook.com/darkenskyfall"><i class="fa fa-facebook"></i></a>
+          <a href="https://www.twitter.com/darkenskyfall"><i class="fa fa-twitter"></i></a>
+          <a href="https://www.instagram.com/darkenskyfall"><i class="fa fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/darkenskyfall"><i class="fa fa-linkedin"></i></a>
+          <a href="https://www.github.com/darkenskyfall"><i class="fa fa-github"></i></a>
+        </div>
+      </div>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
 </html>

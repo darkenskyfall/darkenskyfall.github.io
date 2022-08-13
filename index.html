@@ -14,151 +14,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     
+    <link href='https://fonts.googleapis.com/css?family=Cardo' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
     <style>
-
-      @font-face {
-          font-family: 'Montserrat';
-          src: url('fonts/Montserrat-Black.ttf') format('truetype');
-          font-weight: 900;
-          font-style: normal;
-          font-display: swap;
-      }
-
-      @font-face {
-          font-family: 'Montserrat';
-          src: url('fonts/Montserrat-Bold.ttf') format('truetype');
-          font-weight: bold;
-          font-style: normal;
-          font-display: swap;
-      }
-
-      @font-face {
-          font-family: 'Montserrat';
-          src: url('fonts/Montserrat-BlackItalic.ttf') format('truetype');
-          font-weight: 900;
-          font-style: italic;
-          font-display: swap;
-      }
-
-      @font-face {
-          font-family: 'Montserrat';
-          src: url('fonts/Montserrat-BoldItalic.ttf') format('truetype');
-          font-weight: bold;
-          font-style: italic;
-          font-display: swap;
-      }
-
-      @font-face {
-          font-family: 'Montserrat';
-          src: url('fonts/Montserrat-ExtraBold.ttf') format('truetype');
-          font-weight: 800;
-          font-style: normal;
-          font-display: swap;
-      }
-
-      @font-face {
-          font-family: 'Montserrat';
-          src: url('fonts/Montserrat-ExtraBoldItalic.ttf') format('truetype');
-          font-weight: 800;
-          font-style: italic;
-          font-display: swap;
-      }
-
-      @font-face {
-          font-family: 'Montserrat';
-          src: url('fonts/Montserrat-ExtraLight.ttf') format('truetype');
-          font-weight: 200;
-          font-style: normal;
-          font-display: swap;
-      }
-
-      @font-face {
-          font-family: 'Montserrat';
-          src: url('fonts/Montserrat-ExtraLightItalic.ttf') format('truetype');
-          font-weight: 200;
-          font-style: italic;
-          font-display: swap;
-      }
-
-      @font-face {
-          font-family: 'Montserrat';
-          src: url('fonts/Montserrat-Italic.ttf') format('truetype');
-          font-weight: normal;
-          font-style: italic;
-          font-display: swap;
-      }
-
-      @font-face {
-          font-family: 'Montserrat';
-          src: url('fonts/Montserrat-Light.ttf') format('truetype');
-          font-weight: 300;
-          font-style: normal;
-          font-display: swap;
-      }
-
-      @font-face {
-          font-family: 'Montserrat';
-          src: url('fonts/Montserrat-LightItalic.ttf') format('truetype');
-          font-weight: 300;
-          font-style: italic;
-          font-display: swap;
-      }
-
-      @font-face {
-          font-family: 'Montserrat';
-          src: url('fonts/Montserrat-Medium.ttf') format('truetype');
-          font-weight: 500;
-          font-style: normal;
-          font-display: swap;
-      }
-
-      @font-face {
-          font-family: 'Montserrat';
-          src: url('fonts/Montserrat-Regular.ttf') format('truetype');
-          font-weight: normal;
-          font-style: normal;
-          font-display: swap;
-      }
-
-      @font-face {
-          font-family: 'Montserrat';
-          src: url('fonts/Montserrat-SemiBold.ttf') format('truetype');
-          font-weight: 600;
-          font-style: normal;
-          font-display: swap;
-      }
-
-      @font-face {
-          font-family: 'Montserrat';
-          src: url('fonts/Montserrat-MediumItalic.ttf') format('truetype');
-          font-weight: 500;
-          font-style: italic;
-          font-display: swap;
-      }
-
-      @font-face {
-          font-family: 'Montserrat';
-          src: url('fonts/Montserrat-SemiBoldItalic.ttf') format('truetype');
-          font-weight: 600;
-          font-style: italic;
-          font-display: swap;
-      }
-
-      @font-face {
-          font-family: 'Montserrat';
-          src: url('fonts/Montserrat-Thin.ttf') format('truetype');
-          font-weight: 100;
-          font-style: normal;
-          font-display: swap;
-      }
-
-      @font-face {
-          font-family: 'Montserrat';
-          src: url('fonts/Montserrat-ThinItalic.ttf') format('truetype');
-          font-weight: 100;
-          font-style: italic;
-          font-display: swap;
-      }
 
       html {
         scroll-behavior: smooth;
@@ -167,7 +26,7 @@
       body {
         background: #050505;
         color: #fff;
-        font-family: Montserrat;
+        font-family: Poppins;
         padding-left: 10%;
         padding-right: 10%;
       }
@@ -233,6 +92,19 @@
         margin-right: 20px;
         color: #fff;
       }
+      
+      .link{
+        color: #fff;
+        text-decoration: none;
+        font-family: 'Cardo';
+        font-size: 25px;
+        font-style: italic;
+      }
+
+      .link:hover{
+        color: #eee;
+      }
+
     </style>
     <!-- Custom styles for this template -->
     <link href="heroes.css" rel="stylesheet">
@@ -241,51 +113,53 @@
     <main>
       <div class="px-4 py-5 my-5">
         <!-- <img class="d-block mx-auto mb-4 rounded-circle" src="https://media-exp1.licdn.com/dms/image/C5603AQGRDh2WSwLwVA/profile-displayphoto-shrink_800_800/0/1652607349619?e=1658361600&v=beta&t=IeokowKYh04ZWiAXoOYiW9BzLYIPfQMpZDhjmkzELio" alt="" width="150" height="150"> -->
-        <h1 class="display-5 fw-bold">Hello, I'am Dimas<br>Pramudya Sumarsis</h1>
+        <h1 class="fw-bold">Hello, I'am Dimas<br>Pramudya Sumarsis</h1>
         <div class="col-lg-12">
           <p class="lead mb-4">A Yeagerist who write codes, interest with past, future, black and white images and writing sometimes.</p>
-          <div class="d-grid gap-2 d-sm-flex">
-            <a href="https://drive.google.com/uc?export=download&id=1t2Qis0w1GLt_lNZP0ahI7-EY9GEIzeGd" class="btn btn-light btn-lg px-4 gap-3"><b>Get Resume</b></a>
-            <a href="https://darkenskyfall.medium.com/" class="btn btn-outline-light btn-lg px-4"><b>Read Medium</b></a>
+          <div class="d-grid gap-4 d-sm-flex">
+            <p>I <a href="https://drive.google.com/uc?export=download&id=1t2Qis0w1GLt_lNZP0ahI7-EY9GEIzeGd" class="link">Curriculum Vitae</a></p>
+            <p>II <a href="https://darkenskyfall.medium.com/" class="link">Medium Journal</a></p>
           </div>
         </div>
       </div>
       <div class="px-4 py-5 my-5">
         <div class="row flex-lg-row-reverse align-items-center g-5">
           <div class="col-10 col-sm-8 col-lg-6">
-            <img src="https://media.istockphoto.com/photos/abstract-group-of-business-people-in-the-meeting-picture-id1089810082?k=20&m=1089810082&s=612x612&w=0&h=GXrPAl4EHWOArFjTH5rvyOfZn61XRUvfDXpcKWPiiCs=" class="d-block mx-lg-auto img-fluid rounded" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+            <img src="https://media-exp1.licdn.com/dms/image/C5603AQGRDh2WSwLwVA/profile-displayphoto-shrink_800_800/0/1652607349619?e=1665619200&v=beta&t=Zo9Jx4EOMWyWK7A-AohxqWhRksol8mLLUAly0uD-ZxM" class="d-block mx-lg-auto img-fluid rounded" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
           </div>
           <div class="col-lg-6">
             <h1 class="display-5 fw-bold lh-1 mb-3">Work</h1>
             <p class="lead">I'm currently working as a mobile developer at Xeno Persada Teknologi, one of the startups in the city of Surabaya, Initially full iOS Dev and now expanding into mobile dev with the dart programming language and flutter framework as a framework.</p>
             <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-              <a href="https://github.com/darkenskyfall" class="btn btn-light btn-lg px-4 me-md-2"><b><i class="fa fa-github"></i> Github</b></a>
+              <p>III <a href="https://github.com/darkenskyfall" class="link">Github</a></p>
             </div>
           </div>
         </div>
       </div>
       <div class="px-4 py-5 my-5">
         <h1 class="display-5 fw-bold lh-1 mb-3">Interest</h1>
-        <div class="w-75" style="font-size: 25px;">
-          <span class="badge text-bg-light">Photography</span>
-          <span class="badge text-bg-light">Writing</span>
-          <span class="badge text-bg-light">History</span>
-          <span class="badge text-bg-light">Technology</span>
-          <span class="badge text-bg-light">Minimalism</span>
-          <span class="badge text-bg-light">Stoicism</span>
-          <span class="badge text-bg-light">Black & White</span>
-          <span class="badge text-bg-light">Dart</span>
-          <span class="badge text-bg-light">Flutter</span>
-          <span class="badge text-bg-light">Swift</span>
+        <div class="d-grid gap-4 d-sm-flex">
+          <p>IV <a href="https://instagram.com/darkenskyfall/" class="link">Photography</a></p>
+          <p class="link">Writing</p>
+          <p class="link">History</p>
+          <p class="link">Technology</p>
+        </div>
+        <div class="d-grid gap-4 d-sm-flex">
+          <p>V <a href="https://minimalism.jp/" class="link">Minimalism</a></p>
+          <p>VI <a href="https://www.youtube.com/watch?v=15L0rNuor0Y&t=36s" class="link">Stoicism</a></p>
+          <p class="link">Black & White</p>
+          <p>VII <a href="https://www.swift.org/documentation/" class="link">Swift</a></p>
+        </div>
+        <div class="d-grid gap-4 d-sm-flex">
+          <p>VIII <a href="https://dart.dev/" class="link">Dart</a></p>
+          <p>IX <a href="https://flutter.dev/" class="link">Flutter</a></p>
         </div>
       </div>
-      <div class="container px-4 py-5">
-        <div class="sosmed-icons mb-5 text-center">
-          <a href="https://www.facebook.com/darkenskyfall"><i class="fa fa-facebook"></i></a>
-          <a href="https://www.twitter.com/darkenskyfall"><i class="fa fa-twitter"></i></a>
-          <a href="https://www.instagram.com/darkenskyfall"><i class="fa fa-instagram"></i></a>
-          <a href="https://www.linkedin.com/in/darkenskyfall"><i class="fa fa-linkedin"></i></a>
-          <a href="https://www.github.com/darkenskyfall"><i class="fa fa-github"></i></a>
+      <div class="px-4 py-5 my-5">
+        <div class="d-grid gap-4 d-sm-flex">
+          <h2 class="fw-bold">Contact Me</h2>
+          <p>X <a href="mailto:dimasrajawali76@gmail.com" class="link" style="text-align: right;">Email</a></p>
+          <p>XI <a href="https://linkedin.com/in/darkenskyfall" class="link" style="text-align: right;">Linkedin</a></p>
         </div>
       </div>
   </main>
